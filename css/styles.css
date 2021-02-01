@@ -8,6 +8,10 @@ hr {
     border-width: 0.05em;
 }
 
+.row div hr {
+  border-top: 0.5px solid black;
+}
+
 h1, h2, h3, h4, h5 {
     color: rgb(243, 140, 4);
     font: arial;
@@ -27,13 +31,13 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .glossary {
   width: 80%;
   display: flexbox;
   margin-left: 12.5%;
-
 }
 
 .container {
@@ -136,11 +140,11 @@ p {
   
   .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
+    top: 10px;
+    right: 0;
     font-size: 36px;
-    margin-left: 50px;
   }
+
 
 .footnote-container, .footnote-container p {
   line-height: 1.3;
@@ -182,6 +186,11 @@ p {
     padding-bottom: 5px;
   }
 
+  .ar-table {
+    line-height: 1.2;
+    table-layout: auto;
+    margin: auto;
+  }
   .ar-table tr:nth-child(odd){
     background-color:  white;
     color: black;
@@ -189,17 +198,17 @@ p {
   .ar-table tr:nth-child(even){
     background-color:  rgb(238, 245, 255);
     color: black;
-
   }
   
-  hr {
-    border-top: 0.5px solid black;
-  }
-  @media screen and (max-height: 450px) {
+  /* XS screens */
+  @media screen and (max-width: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .ar-table {font-size: 0.8em;}
+    .sidenav .dropdown-btn {font-size: 18px;}
   }
 
+  /* Medium screens */
   @media screen and (min-width: 800px){
-    #iframe-holder {width: 80%;}
+    .iframe-holder {width: 80%;}
   }

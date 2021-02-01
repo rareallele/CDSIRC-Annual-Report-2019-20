@@ -19,12 +19,13 @@
     <!--Sidebar-->
     <div id="mySidenav" class="sidenav">
         <ul class="list-unstyled components">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" id="closebutton" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="http://www.cdsirc.sa.gov.au/" style="font-size: 1.5em;"><i class="fa fa-home"></i></a></li>
             <li><a href="Title-LOT.html">Title page</a></li>
             <li><a href="Foreword.html">Chair's Foreword</a></li>
             <li><a href="Tables-Figures-Diagrams.html">Tables, Figures and Diagrams</a></li>
             <li><a href="Glossary.html">Glossary</a></li>
-            <li><a href="#" class="active">Acknowledgments</a></li>
+            <li><a href="Acknowledgements.html">Acknowledgments</a></li>
             <li><a href="Committee-Members.html">Committee Members</a></li>
             <li><a href="Executive-Summary.html">Executive Summary</a></li>
             <!--Chapters-->
@@ -37,56 +38,56 @@
                         <!--Subsections-->
                 <div class="dropdown-container">
                     <!--1.1.-->
-                    <a href="Chapter-1.html#1.1">1.1. Analysis and review of child deaths</a>
+                    <a href="Chapter-1.html#1.1" onclick="closeOnClick()">1.1. Analysis and review of child deaths</a>
                     <!--1.2.-->
                     <button class="dropdown-btn">1.2. Rates and patterns of death 
                         <i class="fa fa-caret-down"></i>
                     </button>
                         <div class="dropdown-container">
-                            <a href="Chapter-1.html#1.2.1">1.2.1. Death rates by region</a>
-                            <a href="Chapter-1.html#1.2.2">1.2.2. Death rates of non-resident children and young people</a>
-                            <a href="Chapter-1.html#1.2.3">1.2.3. Death rates and socioeconomic disadvantage</a>
+                            <a href="Chapter-1.html#1.2.1" onclick="closeOnClick()">1.2.1. Death rates by region</a>
+                            <a href="Chapter-1.html#1.2.2" onclick="closeOnClick()">1.2.2. Death rates of non-resident children and young people</a>
+                            <a href="Chapter-1.html#1.2.3" onclick="closeOnClick()">1.2.3. Death rates and socioeconomic disadvantage</a>
                         </div>
                     <!--1.3.-->
                     <button class="dropdown-btn">1.3. Deaths of children and young people and the child protection system 
                         <i class="fa fa-caret-down"></i>
                     </button>
                         <div class="dropdown-container">
-                            <a href="Chapter-1.html#1.3.1">1.3.1.	Infant deaths and challenges for service delivery</a>
+                            <a href="Chapter-1.html#1.3.1" onclick="closeOnClick()">1.3.1.	Infant deaths and challenges for service delivery</a>
                         </div>
                     <!--1.4.-->
                     <button class="dropdown-btn">1.4. Deaths of Aboriginal children and young people 
                         <i class="fa fa-caret-down"></i>
                     </button>
                         <div class="dropdown-container">
-                            <a href="Chapter-1.html#1.4.1">1.4.1. Aboriginal children and young people – care by informal arrangement</a>
+                            <a href="Chapter-1.html#1.4.1" onclick="closeOnClick()">1.4.1. Aboriginal children and young people – care by informal arrangement</a>
                         </div>
                     <!--1.5.-->
                     <button class="dropdown-btn">1.5. Deaths of children and young people with disability 
                         <i class="fa fa-caret-down"></i>
                     </button>
                         <div class="dropdown-container">
-                            <a href="Chapter-1.html#1.5.1">1.5.1. A review into the deaths of children and young people placed in the care of others</a>
+                            <a href="Chapter-1.html#1.5.1" onclick="closeOnClick()">1.5.1. A review into the deaths of children and young people placed in the care of others</a>
                         </div>
                     <!--1.6.-->
-                    <a href="Chapter-1.html#1.6">1.6. Deaths of children and young people from families with culturally and linguistically diverse backgrounds</a>
+                    <a href="Chapter-1.html#1.6" onclick="closeOnClick()">1.6. Deaths of children and young people from families with culturally and linguistically diverse backgrounds</a>
                     <!--1.7.-->
-                    <a href="Chapter-1.html#1.7">1.7. Infant mortality</a>
+                    <a href="Chapter-1.html#1.7" onclick="closeOnClick()">1.7. Infant mortality</a>
                     <!--1.8.-->
                     <button class="dropdown-btn">1.8. Deaths from illness or disease 
                         <i class="fa fa-caret-down"></i>
                     </button>
                         <div class="dropdown-container">
-                            <a href="Chapter-1.html#1.8.1">1.8.1. A review into the death of a young person with chronic illness in lifelong circumstances of neglect of her medical care</a>
-                            <a href="Chapter-1.html#1.8.2">1.8.2. Chronic disease management in children and young people</a>
-                            <a href="Chapter-1.html#1.8.3">1.8.3. Manner of death</a>
+                            <a href="Chapter-1.html#1.8.1" onclick="closeOnClick()">1.8.1. A review into the death of a young person with chronic illness in lifelong circumstances of neglect of her medical care</a>
+                            <a href="Chapter-1.html#1.8.2" onclick="closeOnClick()">1.8.2. Chronic disease management in children and young people</a>
+                            <a href="Chapter-1.html#1.8.3" onclick="closeOnClick()">1.8.3. Manner of death</a>
                         </div>
                     <!--1.9.-->
                     <button class="dropdown-btn">1.9. Deaths from external causes
                         <i class="fa fa-caret-down"></i>
                     </button>
                         <div class="dropdown-container">
-                            <a href="Chapter-1.html#1.9.1">1.9.1. Deaths of children aged 0 to 12 years who were passengers in transport crashes, 2005–2018</a>
+                            <a href="Chapter-1.html#1.9.1" onclick="closeOnClick()">1.9.1. Deaths of children aged 0 to 12 years who were passengers in transport crashes, 2005–2018</a>
                         </div>
             </div> 
             </li>
@@ -99,15 +100,15 @@
                         <!--Subsections-->
                 <div class="dropdown-container">
                     <!--2.1.-->
-                    <a href="Chapter-2.html#2.1">2.1. Legislation and purpose</a>
+                    <a href="Chapter-2.html#2.1" onclick="closeOnClick()">2.1. Legislation and purpose</a>
                     <!--2.2.-->
-                    <a href="Chapter-2.html#2.2">2.2. Committee matters 2019–2020</a>
+                    <a href="Chapter-2.html#2.2" onclick="closeOnClick()">2.2. Committee matters 2019–2020</a>
                     <!--2.3.-->
-                    <a href="Chapter-2.html#2.3">2.3. Governance and support</a>
+                    <a href="Chapter-2.html#2.3" onclick="closeOnClick()">2.3. Governance and support</a>
                     <!--2.4.-->
-                    <a href="Chapter-2.html#2.4">2.4. The ANZCDR & PG</a>
+                    <a href="Chapter-2.html#2.4" onclick="closeOnClick()">2.4. The ANZCDR & PG</a>
                     <!--2.5.-->
-                    <a href="Chapter-2.html#2.5">2.5. Future directions</a>
+                    <a href="Chapter-2.html#2.5" onclick="closeOnClick()">2.5. Future directions</a>
                 </div>
             <!--Chapter 3-->
             <button class="dropdown-btn">3. Methodology
@@ -117,18 +118,18 @@
                         <!--Subsections-->
                 <div class="dropdown-container">
                     <!--2.1.-->
-                    <a href="Chapter-3.html#3.1">3.1. Sources of information</a>
+                    <a href="Chapter-3.html#3.1" onclick="closeOnClick()">3.1. Sources of information</a>
                     <!--2.2.-->
-                    <a href="Chapter-3.html#3.2">3.2. Committee classifications and definitions</a>
+                    <a href="Chapter-3.html#3.2" onclick="closeOnClick()">3.2. Committee classifications and definitions</a>
                     <!--2.3.-->
-                    <a href="Chapter-3.html#3.3">3.3. Coding death using ICD-10</a>
+                    <a href="Chapter-3.html#3.3" onclick="closeOnClick()">3.3. Coding death using ICD-10</a>
                     <!--2.4.-->
-                    <a href="Chapter-3.html#3.4">3.4. In-depth review process</a>
+                    <a href="Chapter-3.html#3.4" onclick="closeOnClick()">3.4. In-depth review process</a>
                     <!--2.5.-->
-                    <a href="Chapter-3.html#3.5">3.5. Reporting requirements</a>
+                    <a href="Chapter-3.html#3.5" onclick="closeOnClick()">3.5. Reporting requirements</a>
                 </div>
             <!--Chapter 4-->
-            <li><a href="Chapter-4.html">4. Data Tables</a></li>  
+            <li><a href="Chapter-4.html" onclick="closeOnClick()">4. Data Tables</a></li>  
         </ul>
     </div>
 

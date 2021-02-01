@@ -19,6 +19,14 @@ function openNav() {
     document.getElementById("main").style.marginLeft= "0";
   }
 
+  function closeOnClick() {
+    var width = document.documentElement.clientWidth
+    if (width <400){
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+  } 
+
   var dropdown = document.getElementsByClassName("dropdown-btn");
   var i;
   
