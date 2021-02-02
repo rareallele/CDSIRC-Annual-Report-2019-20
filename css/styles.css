@@ -173,25 +173,28 @@ th {
   border: 1px solid rgb(34, 71, 146);
   color: white;
   background-color: rgb(34, 71, 146);
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 td {
   border: 1px solid rgb(34, 71, 146);
   color:  rgb(34, 71, 146);
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 .ar-table {
   line-height: 1.2;
   table-layout: auto;
   margin: auto;
+  width: 100%;
 }
 .ar-table tr:nth-child(odd){
   background-color:  white;
