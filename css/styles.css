@@ -214,6 +214,7 @@ img {
   .ar-table {font-size: 0.8em;}
   .sidenav .dropdown-btn {font-size: 18px;}
   .figure-legend {font-size: 1em;}
+  .row p {text-align: justify; text-justify: inter-word;}
 }
 
 /* Medium screens */
