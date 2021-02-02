@@ -85,132 +85,138 @@ p {
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
   
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
-  .dropdown-btn {
-    padding: 8px 8px 6px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .dropdown-container {
-    display: none;
-    background-color: #313131;
-    padding-left: 8px;
-  }
+.dropdown-btn {
+  padding: 8px 8px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
 
-  .dropdown-container a, .dropdown-container .dropdown-btn {
-    color: #b9b6b6;
-  }
-  
-  /* Optional: Style the caret down icon */
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  }
+.dropdown-container {
+  display: none;
+  background-color: #313131;
+  padding-left: 8px;
+}
 
-  .sidenav a:hover, .sidenav .active {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    font-size: 36px;
-  }
+.dropdown-container a, .dropdown-container .dropdown-btn {
+  color: #b9b6b6;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.sidenav a:hover, .sidenav .active {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 36px;
+}
 
 
 .footnote-container, .footnote-container p {
-  line-height: 1.3;
-  margin-bottom: 0;
+line-height: 1.3;
+margin-bottom: 0;
 }
 
-  .footnote {
-    color: black;
-    font-size: 0.8em;
-  }
+.footnote {
+  color: black;
+  font-size: 0.8em;
+}
 
-  .container-fluid a {
-    color: rgb(68, 67, 67);
-    font-style: italic;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-    line-height: 1.6;
-  }
+.container-fluid a {
+  color: rgb(68, 67, 67);
+  font-style: italic;
+}
 
-  th {
-    border: 1px solid rgb(34, 71, 146);
-    color: white;
-    background-color: rgb(34, 71, 146);
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  line-height: 1.6;
+}
 
-  td {
-    border: 1px solid rgb(34, 71, 146);
-    color:  rgb(34, 71, 146);
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+th {
+  border: 1px solid rgb(34, 71, 146);
+  color: white;
+  background-color: rgb(34, 71, 146);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-  .ar-table {
-    line-height: 1.2;
-    table-layout: auto;
-    margin: auto;
-  }
-  .ar-table tr:nth-child(odd){
-    background-color:  white;
-    color: black;
-  }
-  .ar-table tr:nth-child(even){
-    background-color:  rgb(238, 245, 255);
-    color: black;
-  }
-  
-  /* XS screens */
-  @media screen and (max-width: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    .ar-table {font-size: 0.8em;}
-    .sidenav .dropdown-btn {font-size: 18px;}
-  }
+td {
+  border: 1px solid rgb(34, 71, 146);
+  color:  rgb(34, 71, 146);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-  /* Medium screens */
-  @media screen and (min-width: 800px){
-    .iframe-holder {width: 80%;}
-  }
+.ar-table {
+  line-height: 1.2;
+  table-layout: auto;
+  margin: auto;
+}
+.ar-table tr:nth-child(odd){
+  background-color:  white;
+  color: black;
+}
+.ar-table tr:nth-child(even){
+  background-color:  rgb(238, 245, 255);
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* XS screens */
+@media screen and (max-width: 500px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .ar-table {font-size: 0.8em;}
+  .sidenav .dropdown-btn {font-size: 18px;}
+  .figure-legend {font-size: 1em;}
+}
+
+/* Medium screens */
+@media screen and (min-width: 800px){
+  .iframe-holder {width: 80%;}
+}
