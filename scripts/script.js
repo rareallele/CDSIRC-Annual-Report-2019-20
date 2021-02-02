@@ -1,8 +1,8 @@
 function openNav() {
     var width = document.documentElement.clientWidth
-    if (width <500){
+    if (width <700){
       document.getElementById("mySidenav").style.width = "100%";
-      document.getElementById("main").style.marginLeft = "20%";
+      document.getElementById("main").style.marginLeft = "0%";
     }
     else if (width < 1100){
       document.getElementById("mySidenav").style.width = "250px";
@@ -21,7 +21,7 @@ function closeNav() {
 
 function closeOnClick() {
     var width = document.documentElement.clientWidth
-    if (width <500){
+    if (width <700){
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
     }
