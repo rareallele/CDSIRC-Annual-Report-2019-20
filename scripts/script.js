@@ -44,6 +44,7 @@ for (i = 0; i < dropdown.length; i++) {
 
 var width = document.documentElement.clientWidth
 if (width < 500){
+
   document.getElementById("figure1inner").style.cssText = "position:relative;padding-top:0%;";
   document.getElementById("figure1inner").innerHTML = "<img src=\"images/figure1.png\" class=\"center responsive\">"
 

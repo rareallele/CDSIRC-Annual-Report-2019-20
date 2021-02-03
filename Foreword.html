@@ -17,7 +17,7 @@
 <body>
 
     <!--Sidebar-->
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav" style="z-index: 2;">
         <ul class="list-unstyled components">
             <a href="javascript:void(0)" id="closebutton" class="closebtn" onclick="closeNav()">&times;</a>
             <li><a href="http://www.cdsirc.sa.gov.au/" style="font-size: 1.5em;"><i class="fa fa-home"></i></a></li>
@@ -138,7 +138,9 @@
         <header>
         </header>
         <!--Sidebar button-->
-        <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776;</span>
+        <div id="sidebarButton">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
         
         <!--Main content-->
         <div class="container-fluid">
@@ -189,9 +191,9 @@
                 </div>
                 <!--Footnotes-->           
                 <div class="footnote-container">
-                    <a id="fn-1" class="footnote" href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30757-1/fulltext"><sup>1 </sup>https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30757-1/fulltext</a><br>
-                    <a id="fn-2" class="footnote" href="https://www.ccyp.com.au/wp-content/uploads/2020/06/Reflections-on-COVID-19-Web.pdf"><sup>2 </sup>https://www.ccyp.com.au/wp-content/uploads/2020/06/Reflections-on-COVID-19-Web.pdf</a><br>
-                    <a class="footnote" href="http://www.gcyp.sa.gov.au/staying-connected-in-the-face-of-covid-19/"><sup>2 </sup>http://www.gcyp.sa.gov.au/staying-connected-in-the-face-of-covid-19/</a>
+                    <a id="fn-1" class="footnote" href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30757-1/fulltext"><sup>1 </sup>https://www.thelancet.com/</a><br>
+                    <a id="fn-2" class="footnote" href="https://www.ccyp.com.au/wp-content/uploads/2020/06/Reflections-on-COVID-19-Web.pdf"><sup>2 </sup>https://www.ccyp.com.au/</a><br>
+                    <a class="footnote" href="http://www.gcyp.sa.gov.au/staying-connected-in-the-face-of-covid-19/"><sup>2 </sup>http://www.gcyp.sa.gov.au/</a>
                 </div>
             </div>   
         </div>

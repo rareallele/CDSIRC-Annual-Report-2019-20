@@ -62,6 +62,7 @@ p {
     display: flex;
     max-width: 1000px;
     margin: auto;
+    margin-top: 20px;
 }
 .column {
   float: left;
@@ -210,6 +211,11 @@ img {
   margin: auto;
 }
 
+#sidebarButton span {
+  font-size:30px; 
+  cursor:pointer; 
+  position: fixed;}
+
 /* XS screens */
 @media screen and (max-width: 500px) {
   .sidenav {padding-top: 15px;}
@@ -218,6 +224,20 @@ img {
   .sidenav .dropdown-btn {font-size: 18px;}
   .figure-legend {font-size: 1em;}
   .row p {text-align: justify; text-justify: inter-word;}
+  .row {margin-top: 50px;}
+  #sidebarButton {
+    width: 100%; 
+    position: fixed; 
+    background-color: white; 
+    z-index: 1; 
+    margin-top: -18px;
+  }
+  #sidebarButton span {
+    font-size:30px; 
+    cursor:pointer; 
+    position: relative;
+  }
+  .container-fluid{width: 100%;}
 }
 
 /* Medium screens */

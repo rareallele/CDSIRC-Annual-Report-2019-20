@@ -17,7 +17,7 @@
 <body>
 
     <!--Sidebar-->
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav" style="z-index: 2;">
         <ul class="list-unstyled components">
             <a href="javascript:void(0)" id="closebutton" class="closebtn" onclick="closeNav()">&times;</a>
             <li><a href="http://www.cdsirc.sa.gov.au/" style="font-size: 1.5em;"><i class="fa fa-home"></i></a></li>
@@ -138,7 +138,9 @@
         <header>
         </header>
         <!--Sidebar button-->
-        <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776;</span>
+        <div id="sidebarButton">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
         
         <!--Main content-->
         <div class="container-fluid">

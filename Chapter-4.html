@@ -17,7 +17,7 @@
 <body>
 
     <!--Sidebar-->
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav" style="z-index: 2;">
         <ul class="list-unstyled components">
             <a href="javascript:void(0)" id="closebutton" class="closebtn" onclick="closeNav()">&times;</a>
             <li><a href="http://www.cdsirc.sa.gov.au/" style="font-size: 1.5em;"><i class="fa fa-home"></i></a></li>
@@ -138,7 +138,9 @@
         <header>
         </header>
         <!--Sidebar button-->
-        <span style="font-size:30px;cursor:pointer;position: fixed;" onclick="openNav()">&#9776;</span>
+        <div id="sidebarButton">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
         
         <!--Main content-->
         <div class="container-fluid">
@@ -152,7 +154,7 @@
                     <div id="dt-1" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 1: Death rate by year of death and sex for all children and young people, South Australia 2005–2019</i></strong><br><br>
                         <table class="ar-table">
-                            <tr><th>Year</th><th>Sex</th><th>Number of deaths</th><th>Death rate per 100,000 resident population</th></tr>
+                            <tr><th>Year</th><th>Sex</th><th>Number of deaths</th><th>Death rate per 100,000 <br> resident population</th></tr>
                             <tr><td>2005</td><td>Female</td><td>58</td><td>34.5</td></tr>
                             <tr><td>2005</td><td>Male</td><td>78</td><td>43.88</td></tr>
                             <tr><td>2005</td><td>Total</td><td>136</td><td>39.32</td></tr>
@@ -204,7 +206,7 @@
                     <div id="dt-2" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 2: Death rate by year of death and sex for children and young people who were usually resident in South Australia, 2005–2019</i></strong><br><br>
                         <table class="ar-table">
-                            <tr><th>Year</th><th>Sex</th><th>Number of deaths</th><th>Death rate per 100,000 resident population</th></tr>
+                            <tr><th>Year</th><th>Sex</th><th>Number of deaths</th><th>Death rate per 100,000 <br> resident population</th></tr>
                             <tr><td>2005</td><td>Female</td><td>52</td><td>30.93</td></tr>
                             <tr><td>2005</td><td>Male</td><td>71</td><td>39.95</td></tr>
                             <tr><td>2005</td><td>Total</td><td>123</td><td>35.56</td></tr>
@@ -256,7 +258,7 @@
                     <div id="dt-3" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 3: Death rate by metropolitan and inner rural regions for children and young people who were usually resident in South Australia, 2005–2019</i></strong><br><br>  
                         <table class="ar-table">
-                            <tr><th>Region</th><th>Number of deaths</th><th>Death rate per 100,000 resident population</th></tr>
+                            <tr><th>Region</th><th>Number of deaths</th><th>Death rate per 100,000 <br> resident population</th></tr>
                             <tr><td>Adelaide Hills</td><td>48</td><td>19.92</td></tr>
                             <tr><td>Barossa, Light and Lower North</td><td>65</td><td>28.67</td></tr>
                             <tr><td>Eastern Adelaide</td><td>113</td><td>21.71</td></tr>
@@ -269,7 +271,7 @@
                     <div id="dt-4" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 4: Death rate by outer rural regions for children and young people who were usually resident in South Australia, 2005–2019</i></strong><br><br>  
                         <table class="ar-table">
-                            <tr><th>Region</th><th>Number of deaths</th><th>Death rate per 100,000 resident population</th></tr>
+                            <tr><th>Region</th><th>Number of deaths</th><th>Death rate per 100,000 <br> resident population</th></tr>
                             <tr><td>Eyre and Western</td><td>60</td><td>29.29</td></tr>
                             <tr><td>Far North</td><td>90</td><td>97.82</td></tr>
                             <tr><td>Fleurieu and Kangaroo Island</td><td>45</td><td>28.97</td></tr>
@@ -296,7 +298,7 @@
                     <div id="dt-6" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 6: Death rate by Relative Socio-Economic Disadvantage quintile for all children and young people, South Australia 2005–2019</i></strong><br><br>  
                         <table class="ar-table">
-                            <tr><th>Relative Socio-Economic Disadvantage</th><th>Death rate per 100,000 resident population</th></tr></thead><tbody>
+                            <tr><th>Relative Socio-Economic Disadvantage</th><th>Death rate per 100,000 <br> resident population</th></tr></thead><tbody>
                             <tr><td>1</td><td>37.96</td></tr>
                             <tr><td>2</td><td>35.74</td></tr>
                             <tr><td>3</td><td>31.83</td></tr>
@@ -308,7 +310,7 @@
                     <div id="dt-7" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 7: Death rate by cultural background for all children and young people, South Australia 2005–2019</i></strong><br><br>  
                         <table class="ar-table">
-                            <tr class="ar-firstrow"><th>Year</th><th>Cultural Background</th><th>Death rate per 100,000 resident population</th></tr>
+                            <tr class="ar-firstrow"><th>Year</th><th>Cultural Background</th><th>Death rate per 100,000 <br> resident population</th></tr>
                             <tr><td>2005</td><td>Aboriginal</td><td>123.07</td></tr>
                             <tr><td>2005</td><td>Other</td><td>35.84</td></tr>
                             <tr><td>2005</td><td>Total</td><td>39.32</td></tr>
@@ -360,7 +362,7 @@
                     <div id="dt-8" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 8: Death rate by cultural background and socioeconomic disadvantage, South Australia 2005–2019</i></strong><br><br>  
                         <table class="ar-table">
-                            <tr><th>Index of Relative Socio-Economic Disadvantage</th><th>Cultural Background</th><th>Number of deaths</th><th>Death rate per 100,000 resident population</th></tr>
+                            <tr><th>Index of Relative <br> Socio-Economic Disadvantage</th><th>Cultural Background</th><th>Number of deaths</th><th>Death rate per 100,000 <br> resident population</th></tr>
                             <tr><td>1</td><td>Aboriginal</td><td>95</td><td>72.33</td></tr>
                             <tr><td>1</td><td>Other</td><td>436</td><td>35.39</td></tr>
                             <tr><td>2</td><td>Aboriginal</td><td>30</td><td>69.2</td></tr>
@@ -377,7 +379,7 @@
                     <div id="dt-9" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 9: Death rate per 10,000 live births by year of death and sex, for infants, South Australia 2005–2019</i></strong><br><br>  
                         <table class="ar-table">
-                            <tr><th>Year</th><th>Sex</th><th>Number of deaths</th><th>Number of births</th><th>Death rate per 10,000 live births</th></tr>
+                            <tr><th>Year</th><th>Sex</th><th>Number of deaths</th><th>Number of births</th><th>Death rate per 10,000 <br> live births</th></tr>
                             <tr><td>2005</td><td>Female</td><td>37</td><td>8744</td><td>42.31</td></tr>
                             <tr><td>2005</td><td>Male</td><td>48</td><td>9323</td><td>51.49</td></tr>
                             <tr><td>2005</td><td>Total</td><td>85</td><td>18067</td><td>47.05</td></tr>
@@ -429,7 +431,7 @@
                     <div id="dt-10" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 10: Death rate by metropolitan and inner rural regions for infants who were usually resident in South Australia, 2005–2019</i></strong><br><br>  
                         <table class="ar-table">
-                            <tr><th>Region</th><th>Number of deaths</th><th>Death rate per 100,000 resident population</th></tr>
+                            <tr><th>Region</th><th>Number of deaths</th><th>Death rate per 100,000 <br> resident population</th></tr>
                             <tr><td>Adelaide Hills</td><td>26</td><td>23.95</td></tr>
                             <tr><td>Barossa Light and Lower North</td><td>33</td><td>32.67</td></tr>
                             <tr><td>Eastern Adelaide</td><td>56</td><td>21.83</td></tr>
@@ -442,7 +444,7 @@
                     <div id="dt-11" class="center" style="width: 100%;">
                         <strong class="figure-legend"><i>Data table 11: Death rate by outer rural regions for infants who were usually resident in South Australia, 2005–2019</i></strong><br><br>  
                         <table class="ar-table">
-                            <tr><th>Region</th><th>Number of deaths</th><th>Death rate per 100,000 resident population</th></tr>
+                            <tr><th>Region</th><th>Number of deaths</th><th>Death rate per 100,000 <br> resident population</th></tr>
                             <tr><td>Eyre and Western</td><td>33</td><td>32.75</td></tr>
                             <tr><td>Far North</td><td>47</td><td>91.31</td></tr>
                             <tr><td>Fleurieu and Kangaroo Island</td><td>27</td><td>40.06</td></tr>
